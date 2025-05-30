@@ -79,7 +79,9 @@ class ChatCompletions
             throw new \Exception('Response format not supported');
         }
 
-        $this->response_format = $response_format;
+        $rf = new ResponseFormat();
+        $rf->type($response_format['type']);
+        $this->response_format = $rf;
 
         return $this;
     }
