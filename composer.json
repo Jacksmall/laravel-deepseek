@@ -1,0 +1,22 @@
+{
+    "name": "chenkuan/laravel-deepseek",
+    "license": "MIT",
+    "description": "Laravel Deepseek",
+    "keywords": ["laravel", "deepseek"],
+    "autoload": {
+        "psr-4": {
+            "Jacksmall\\LaravelDeepseek\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "chenkuan",
+            "email": "812254315@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "~5.0",
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
