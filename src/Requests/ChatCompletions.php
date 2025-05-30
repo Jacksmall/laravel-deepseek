@@ -75,11 +75,11 @@ class ChatCompletions
 
     public function response_format($response_format)
     {
-        if (!in_array($response_format, ['text', 'json_object'])) {
+        if (!in_array($response_format['type'], ['text', 'json_object'])) {
             throw new \Exception('Response format not supported');
         }
 
-        $this->response_format->type = $response_format;
+        $this->response_format = $response_format;
 
         return $this;
     }
